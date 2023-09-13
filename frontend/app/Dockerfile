@@ -5,4 +5,7 @@ COPY . /app
 
 WORKDIR /app
 
-RUN npm ci
+RUN npm install 
+
+CMD ["npm", "run","dev"]
+
